@@ -6,9 +6,21 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #ff6600;
-}
 
+}
+.video{
+    position: fixed;
+    z-index: -1;
+    width: 100%; /* Set the video width to 100% to fill the screen */
+    height: 100vh; /* Set the video height to fill the screen height */
+    object-fit: fill; /* Maintain the video's aspect ratio and cover the entire screen */
+}
+video{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
 /* Style the calculator container */
 #calculator {
     margin: 20px;
@@ -16,6 +28,10 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     display: inline-block;
+    position: relative;
+    bottom: auto;
+    z-index: 1;
+
 }
 
 /* Style the calculator header */
